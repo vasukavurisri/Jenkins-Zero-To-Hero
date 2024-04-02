@@ -14,7 +14,7 @@ public class StartApplication {
     @GetMapping("/")
     public String index(final Model model) {
         Date date=new Date();
-        model.addAttribute("title", "I have successfuly built a sprint boot application using vasu Maven");
+        model.addAttribute("title", "I have successfuly built a Vasu sprint boot application using Maven");
         model.addAttribute("msg", "This application is deployed by vasu on to Kubernetes using Argo CD"+" & Date is:"+date);
         return "index";
     }
